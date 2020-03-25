@@ -26,25 +26,39 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtQ-EJ-ssf">
-                                                    <rect key="frame" x="7" y="16" width="399" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtQ-EJ-ssf">
+                                                    <rect key="frame" x="8" y="16" width="398" height="128"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ftE-sY-QmN">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ftE-sY-QmN">
                                                             <rect key="frame" x="8" y="24" width="75" height="80"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="75" id="NNc-jh-SgY"/>
+                                                            </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4F0-RM-I2m">
-                                                            <rect key="frame" x="99" y="54" width="42" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4F0-RM-I2m">
+                                                            <rect key="frame" x="99" y="53.5" width="42" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="4F0-RM-I2m" firstAttribute="leading" secondItem="ftE-sY-QmN" secondAttribute="trailing" constant="16" id="7oL-M2-0kb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ftE-sY-QmN" secondAttribute="bottom" constant="24" id="AyY-MQ-kLQ"/>
+                                                        <constraint firstItem="ftE-sY-QmN" firstAttribute="centerY" secondItem="4F0-RM-I2m" secondAttribute="centerY" id="CVA-xv-guk"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4F0-RM-I2m" secondAttribute="trailing" constant="20" symbolic="YES" id="Efz-7C-9v9"/>
+                                                        <constraint firstItem="ftE-sY-QmN" firstAttribute="leading" secondItem="EtQ-EJ-ssf" secondAttribute="leading" constant="8" id="MvR-Xq-ydi"/>
+                                                        <constraint firstItem="ftE-sY-QmN" firstAttribute="top" secondItem="EtQ-EJ-ssf" secondAttribute="top" constant="24" id="t9u-bo-ueV"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="EtQ-EJ-ssf" secondAttribute="bottom" constant="16" id="DrM-l8-Dtk"/>
+                                                <constraint firstAttribute="trailing" secondItem="EtQ-EJ-ssf" secondAttribute="trailing" constant="8" id="KBy-DN-Djb"/>
+                                                <constraint firstItem="EtQ-EJ-ssf" firstAttribute="top" secondItem="06g-Ye-2rA" secondAttribute="top" constant="16" id="KDN-ZP-jm0"/>
+                                                <constraint firstItem="EtQ-EJ-ssf" firstAttribute="leading" secondItem="06g-Ye-2rA" secondAttribute="leading" constant="8" id="vAL-Th-STz"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="LabelCell" destination="4F0-RM-I2m" id="pdQ-d3-ns8"/>
